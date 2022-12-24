@@ -8,8 +8,7 @@
     "pretest": "npm run build",
     "test": "mocha ./dist/__tests__/**/*.unit.js",
     "lint": "eslint . --ext .ts",
-    "clean": "rm -rf ./dist",
-    "prebuild": "npm run clean && npm run lint",
+    "prebuild": "npm run lint",
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node ./dist/index.js"
